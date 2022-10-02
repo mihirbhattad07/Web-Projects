@@ -1,0 +1,83 @@
+<!DOCTYPE html>
+<html>
+    <head>
+        <title>
+            Animation using Slider
+        </title>
+        <style>
+            body{
+                background-image: url("C:/Users/mihir/OneDrive/Desktop/Classes Program/Images/background3.jfif");
+                background-attachment: fixed;
+                background-repeat: no-repeat;
+                background-size: 100%;
+                }
+            div{
+                border-style:ridge;
+                border-width: 20px;
+                border-color: cornsilk;
+                width: 700px;
+                height: 400px;
+                margin-left: 400px;
+                margin-top: 200px;
+                display: inline-block;
+                white-space: nowrap;
+                position: relative;
+                overflow: hidden;
+            }
+            img{
+                animation-name: abc;
+                animation-duration: 6s;
+                animation-iteration-count: infinite;
+                animation-direction: alternate-reverse;
+                
+            }
+            #box1{
+                height: 400px;
+                width: 700px;
+                right: 0%;
+                position: relative;
+                
+                
+            }
+            #box2{
+                height: 400px;
+                width: 700px;
+                right: 100%;
+                position:relative;
+                
+            }
+            #box3{
+                height: 400px;
+                width: 700px;
+                right: 200%;
+                position:relative;
+                
+            }
+            @keyframes abc
+            {
+                0%{
+                    right:0%;
+                }
+                50%
+                {
+                    right:100%;
+                }
+                100%
+                {
+                    right: 200%;
+                }
+            }
+           
+        </style>
+    </head>
+    <body>
+        <div>
+            <img id="box1" src="C:\Users\mihir\OneDrive\Desktop\Classes Program\Images\sunrise.jpg" height=100% width="100%">
+            <img id="box2" src="C:\Users\mihir\OneDrive\Desktop\Classes Program\Images\background4.jfif" height=100% width="100%">
+            <img id="box3" src="C:\Users\mihir\OneDrive\Desktop\Classes Program\Images\background5.jpg" height=100% width="100%">
+
+
+
+        </div>
+    </body>
+</html>
